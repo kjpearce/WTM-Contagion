@@ -7,16 +7,17 @@ addpath(genpath('WTM_map'))
 %% Define Experiment parameters
 
 %compute WTM map for T=0.2;
-T =0.0;
+T =0.4;
 
 %yes compile the c++ code that
 compile = 1;%set to 0 after you run it once on your computer to speed code
 
 %the linklist for the network is in file "LinkList.tsv
-linklist_filename ='ExampleLinkList.tsv';
+%linklist_filename ='ExampleLinkList.tsv';
+linklist_filename = 'aggregate_edge_list.tsv';
 
 %save the activation times in file "NoisyRingLattice_T=02.tsv"
-activationtime_filename = 'NoisyRingLattice_T=02.tsv';
+activationtime_filename = 'LondonData_T=02.tsv';
 
 %% Compute WTM
 disp(' ');
